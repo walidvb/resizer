@@ -11,7 +11,6 @@ for f in "$@"
 
 				echo "Processing "$filename.$extension""
 				out="$path/""$filename"".""$extension"
-				#echo "out: " "$out"
 				sips -Z 1600 "$f" --out "$out"
 		else
 			echo "Skipping $f"
